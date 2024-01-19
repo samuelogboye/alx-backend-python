@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Async Generator"""
 import asyncio
-from typing import List
+from typing import Generator
 
 
-async def async_generator() -> List[float]:
+async def async_generator() -> Generator[float]:
     """Yield random numbers between 0 and 10"""
     import random
     for i in range(10):
